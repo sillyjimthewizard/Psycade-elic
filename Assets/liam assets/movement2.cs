@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(PlayerInput))]
-public class movement: MonoBehaviour
+public class movement2 : MonoBehaviour
 {
 
     [SerializeField] private float playerspeed = 5f;
@@ -67,7 +67,7 @@ public class movement: MonoBehaviour
     
     void HandleMovement()
     {
-        Vector3 movement = new Vector3(move.x, 0, move.y); 
+        Vector3 movement = new Vector3(move.x, 0, 0); 
         // movement = name of the vector, not the name of the input
         controller.Move(movement * Time.deltaTime * playerspeed);
         
