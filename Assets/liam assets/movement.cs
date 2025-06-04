@@ -21,6 +21,7 @@ public class movement: MonoBehaviour
     
     private Controls playerControls;
     private PlayerInput playerInput;
+    public bool iffrog;
    
 
     // this line may not work due to how i named my files, but it hasnt thrown up a error so lets pray
@@ -30,6 +31,7 @@ public class movement: MonoBehaviour
         controller = GetComponent<CharacterController>();  
         playerControls = new Controls();
         playerInput = GetComponent<PlayerInput>();
+        iffrog = (false);
     }
 
     private void OnEnable()
@@ -67,17 +69,22 @@ public class movement: MonoBehaviour
     
     void HandleMovement()
     {
-        Vector3 movement = new Vector3(move.x, 0, move.y); 
-        // movement = name of the vector, not the name of the input
-        controller.Move(movement * Time.deltaTime * playerspeed);
-        
-        playervelocity.y += gravitytvalue * Time.deltaTime;
-        controller.Move(playervelocity * Time.deltaTime);
-        //https://docs.unity3d.com/6000.0/Documentation/ScriptReference/CharacterController.Move.html
+        if (iffrog == true)
+        {
+
+            Vector3 movement = new Vector3(move.x, 0, move.y);
+            // movement = name of the vector, not the name of the input
+            controller.Move(movement * Time.deltaTime * playerspeed);
+
+            playervelocity.y += gravitytvalue * Time.deltaTime;
+            controller.Move(playervelocity * Time.deltaTime);
+            //https://docs.unity3d.com/6000.0/Documentation/ScriptReference/CharacterController.Move.html
+        }
     }
     
     void HandleRotation()
     {
     
     }
+
 }
