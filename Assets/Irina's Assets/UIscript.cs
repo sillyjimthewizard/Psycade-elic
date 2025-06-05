@@ -30,16 +30,21 @@ public class UIscript : MonoBehaviour
 
     public void Update()
     {
-     
-        if (Input.GetKey(KeyCode.Space) && (canplay = true))
+    
+    
+        if ((canplay == true) && Input.GetKey(KeyCode.Space))
         {
             titlescreen.enabled = false;
             main.enabled = true;
             options.enabled = false;
             canplay = false;
+            Debug.Log("this is working owo");
 
         }
+        
     }
+    
+    
     public void OnPlay()
     {
         titlescreen.enabled = false;
@@ -47,6 +52,7 @@ public class UIscript : MonoBehaviour
         options.enabled = false;
         fpsplayer.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
+        canplay = false;
         
     }
     public void OnOptions()

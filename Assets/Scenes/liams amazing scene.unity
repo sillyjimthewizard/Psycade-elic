@@ -3105,34 +3105,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6783441914887117901, guid: 2961047a90f15184f947db91d71cb1ac, type: 3}
---- !u!1 &874082654 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7985974569186381559, guid: 2961047a90f15184f947db91d71cb1ac,
-    type: 3}
-  m_PrefabInstance: {fileID: 910702784}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &874082658
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874082654}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3252224991405807402, guid: 2961047a90f15184f947db91d71cb1ac, type: 3}
 --- !u!1 &880631338 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7486283344480467384, guid: 2961047a90f15184f947db91d71cb1ac,
@@ -3312,7 +3284,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 0790a6c5db88440419ffcebaf5b30d11, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7985974569186381559, guid: 2961047a90f15184f947db91d71cb1ac, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -8559227074699976848, guid: 2961047a90f15184f947db91d71cb1ac,
@@ -3455,10 +3428,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 14019428}
-    - targetCorrespondingSourceObject: {fileID: 7985974569186381559, guid: 2961047a90f15184f947db91d71cb1ac,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 874082658}
     - targetCorrespondingSourceObject: {fileID: -1760714182489039777, guid: 2961047a90f15184f947db91d71cb1ac,
         type: 3}
       insertIndex: -1
@@ -4175,6 +4144,16 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultFOV
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114762042097486276, guid: 11aaea5348574644a9eb4f4504fcce3f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
