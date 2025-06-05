@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class interaction : MonoBehaviour
@@ -15,10 +16,15 @@ public class interaction : MonoBehaviour
      
      public GameObject fpsplayer;
      public GameObject froggerplay;
+     public GameObject paddleB;
+     public GameObject paddleI;
 
     public bool insidebox;
     movement movement;
+    
     interaction1 interaction1;
+    movement3 movement3;
+    movement2 movement2;
     
     
     // Start is called before the first frame update
@@ -26,13 +32,20 @@ public class interaction : MonoBehaviour
     {
         movement = froggerplay.GetComponent<movement>();
         interaction1 = froggerplay.GetComponent<interaction1>();
+        movement2 = paddleB.GetComponent<movement2>();
+        movement3 = paddleI.GetComponent<movement3>();
         playerControls = new Controls();
     playerInput = GetComponent<PlayerInput>();
 
     froggerplay = GameObject.Find("Capsule");
     fpsplayer = GameObject.Find("First Person Controller");
+    paddleB = GameObject.Find("paddle");
+    paddleI = GameObject.Find("paddle2");
     //froggerplay.SetActive(false);
     movement.iffrog = false;
+    paddleB.SetActive(false);
+    paddleI.SetActive(false);
+       
     
     //insidebox = true;
     }
@@ -53,8 +66,37 @@ public class interaction : MonoBehaviour
             
             
         }
+
+         if (other.CompareTag("breakout") && Input.GetKey(playgame))
+        {
+            Debug.Log("HELP ME");
+            //insidebox = false;
+            
+            //froggerplay.SetActive(true);
+            fpsplayer.SetActive(false);
+            paddleB.SetActive(true);
+
+
+            
+            
+        }
+
+         if (other.CompareTag("invaderz") && Input.GetKey(playgame))
+        {
+            Debug.Log("HELP ME");
+            //insidebox = false;
+            
+            //froggerplay.SetActive(true);
+            fpsplayer.SetActive(false);
+            paddleI.SetActive(true);
+
+
+            
+            
+        }
         
     }
+    
 
      //&& insidebox == true
 }

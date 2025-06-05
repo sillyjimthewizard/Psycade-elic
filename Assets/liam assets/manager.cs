@@ -11,6 +11,8 @@ public class manager : MonoBehaviour
       movement movementfrog;
       movement2 movementfps;
     interaction1 interaction1;
+     public KeyCode resetgame = KeyCode.R;
+
 
      
     // Start is called before the first frame update
@@ -28,6 +30,13 @@ public class manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKey(resetgame))
+        {
+            fpsplayer.SetActive(true);
+            //froggerplay.SetActive(false);
+            movementfrog.iffrog = false;
+
+        }
+
     }
 }
