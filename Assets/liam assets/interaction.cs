@@ -18,12 +18,14 @@ public class interaction : MonoBehaviour
 
     public bool insidebox;
     movement movement;
+    interaction1 interaction1;
     
     
     // Start is called before the first frame update
     void Start()
     {
         movement = froggerplay.GetComponent<movement>();
+        interaction1 = froggerplay.GetComponent<interaction1>();
         playerControls = new Controls();
     playerInput = GetComponent<PlayerInput>();
 
@@ -47,6 +49,8 @@ public class interaction : MonoBehaviour
             //froggerplay.SetActive(true);
             movement.iffrog = true;
             fpsplayer.SetActive(false);
+            interaction1.insidebox2 = true;
+            
             
         }
         
