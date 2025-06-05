@@ -8,26 +8,25 @@ public class UIscript : MonoBehaviour
     public Canvas main;
     public Canvas options;
     public bool canplay;
-    public int degree;
+    
+    public GameObject gamemanager;
+    manager Manager;
+    movement2 movementfps;
 
-  
+    public GameObject fpsplayer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        gamemanager = GameObject.Find("manager");
+        fpsplayer = GameObject.Find("First Person Controller");
+        Manager = gamemanager.GetComponent<manager>();
+        movementfps = fpsplayer.GetComponent<movement2>();
         titlescreen.enabled = true;
         main.enabled = false;
         options.enabled = false;
         canplay = true;
     }
-    public void SPIN()
-	{
-		degree = degree + 1;
-		transform.Rotate(0, 0, degree);
-		Debug.Log("whatever");
-		Debug.Log(degree);
-	}
 
     public void Update()
     {
@@ -46,6 +45,9 @@ public class UIscript : MonoBehaviour
         titlescreen.enabled = false;
         main.enabled = false;
         options.enabled = false;
+        fpsplayer.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        
     }
     public void OnOptions()
     {

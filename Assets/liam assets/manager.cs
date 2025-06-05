@@ -25,6 +25,7 @@ public class manager : MonoBehaviour
         movementfrog = froggerplay.GetComponent<movement>();
         interaction1 = froggerplay.GetComponent<interaction1>();
         movementfps = fpsplayer.GetComponent<movement2>();
+        fpsplayer.SetActive(false);
     }
 
     // Update is called once per frame
