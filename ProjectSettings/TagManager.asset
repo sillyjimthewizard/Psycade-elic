@@ -6,6 +6,7 @@ TagManager:
   tags:
   - machine
   - end
+  - Ground
   layers:
   - Default
   - TransparentFX
