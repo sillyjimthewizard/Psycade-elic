@@ -13,6 +13,7 @@ public class interaction : MonoBehaviour
      
      private Vector2 interact;
      public KeyCode playgame = KeyCode.E;
+    
      
      public GameObject fpsplayer;
      public GameObject froggerplay;
