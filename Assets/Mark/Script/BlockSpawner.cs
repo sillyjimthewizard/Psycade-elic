@@ -5,12 +5,14 @@ using UnityEngine;
 public class BlockSpawner : MonoBehaviour
 {
 
-
+    public GameObject enemy;
+    public GameObject enemy2;
     public Vector3 centre;
     public Vector3 size;
     public GameObject block;
     public int noOfBlocks;
     public Color[] theseColors;
+    public GameObject[] theseModels;
     Vector3 spawnPos;
     Transform holder;
     
@@ -24,9 +26,15 @@ public class BlockSpawner : MonoBehaviour
         for (int i = 0; i < noOfBlocks; i++)
         {
             spawnPos = (transform.localPosition + centre) + new Vector3 (Random.Range(-size.x / 2, size.x / 2), Random.Range(-size.y / 2, size.y / 2), Random.Range(-size.z / 2, size.z / 2));
-            GameObject blockObj = Instantiate(block, spawnPos, Quaternion.identity);
-            blockObj.transform.GetComponent<Renderer>().material.color = theseColors[Random.Range(0,theseColors.Length)];
-            blockObj.transform.parent = holder;
+            block = theseModels[Random.Range(0,theseModels.Length)];
+            //blockObj.transform.GetComponent<Renderer>().material.color = theseColors[Random.Range(0,theseColors.Length)];
+
+            GameObject enemy2Obj = Instantiate(block, spawnPos, Quaternion.identity);
+            enemy2Obj.transform.parent = holder;
+        
+            GameObject enemyObj = Instantiate(block);
+            enemyObj.transform.parent = holder;
+
         }
         
         
