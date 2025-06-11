@@ -17,6 +17,7 @@ public class interaction : MonoBehaviour
      
      public GameObject fpsplayer;
      public GameObject froggerplay;
+     public GameObject paddlef;
      public GameObject paddleB;
      public GameObject paddleI;
 
@@ -38,14 +39,16 @@ public class interaction : MonoBehaviour
         playerControls = new Controls();
     playerInput = GetComponent<PlayerInput>();
 
-    froggerplay = GameObject.Find("Capsule");
+    //froggerplay = GameObject.Find("Capsule");
     fpsplayer = GameObject.Find("First Person Controller");
     paddleB = GameObject.Find("paddle");
-    paddleI = GameObject.Find("paddle2");
+    paddleI = GameObject.Find("invaderpaddle");
+    paddlef = GameObject.Find("FroggerPlayer");
     //froggerplay.SetActive(false);
     movement.iffrog = false;
     paddleB.SetActive(false);
     paddleI.SetActive(false);
+    paddlef.SetActive(false);
        
     
     //insidebox = true;
@@ -59,9 +62,9 @@ public class interaction : MonoBehaviour
         {
             Debug.Log("HELP ME");
             //insidebox = false;
-            
+
             //froggerplay.SetActive(true);
-            movement.iffrog = true;
+            paddlef.SetActive(true);
             fpsplayer.SetActive(false);
             interaction1.insidebox2 = true;
             

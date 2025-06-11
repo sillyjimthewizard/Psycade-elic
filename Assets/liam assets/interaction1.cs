@@ -28,13 +28,13 @@ public class interaction1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    movement = froggerplay.GetComponent<movement>();
+    //movement = froggerplay.GetComponent<movement>();
     Manager = gamemanager.GetComponent<manager>();
-    movement.iffrog = false;
+    //movement.iffrog = false;
         //playerControls = new Controls();
     //playerInput = GetComponent<PlayerInput>();
 
-    froggerplay = GameObject.Find("Capsule");
+    froggerplay = GameObject.Find("FroggerPlayer");
     fpsplayer = GameObject.Find("First Person Controller");
     gamemanager = GameObject.Find("Manager");
     
@@ -54,10 +54,11 @@ public class interaction1 : MonoBehaviour
             insidebox2 = false;
             fpsplayer.SetActive(true);
             //froggerplay.SetActive(false);
-            movement.iffrog = false;
+            
             transform.position = setPosition;
             Manager.tokencount ++;
             Debug.Log(Manager.tokencount);
+            froggerplay.SetActive(false);
         }
         
     }

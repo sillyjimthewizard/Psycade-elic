@@ -18,7 +18,7 @@ public class manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        froggerplay = GameObject.Find("Capsule");
+        froggerplay = GameObject.Find("FroggerPlayer");
         fpsplayer = GameObject.Find("First Person Controller");
         tokencount = 0;
         
@@ -34,8 +34,8 @@ public class manager : MonoBehaviour
         if(Input.GetKey(resetgame))
         {
             fpsplayer.SetActive(true);
-            //froggerplay.SetActive(false);
-            movementfrog.iffrog = false;
+            froggerplay.SetActive(false);
+            
 
         }
 
