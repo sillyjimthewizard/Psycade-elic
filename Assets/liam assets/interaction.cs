@@ -21,6 +21,8 @@ public class interaction : MonoBehaviour
      public GameObject paddleB;
      public GameObject paddleI;
 
+     public GameObject breakout;
+
     public bool insidebox;
     movement movement;
     
@@ -32,23 +34,30 @@ public class interaction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        fpsplayer = GameObject.Find("First Person Controller");
+        paddleB = GameObject.Find("paddle");
+        paddleI = GameObject.Find("invaderpaddle");
+        paddlef = GameObject.Find("FroggerPlayer");
+        breakout = GameObject.Find ("breakout");
+        
+
+
+
         movement = froggerplay.GetComponent<movement>();
         interaction1 = froggerplay.GetComponent<interaction1>();
         movement2 = paddleB.GetComponent<movement2>();
         movement3 = paddleI.GetComponent<movement3>();
         playerControls = new Controls();
-    playerInput = GetComponent<PlayerInput>();
+        playerInput = GetComponent<PlayerInput>();
 
     //froggerplay = GameObject.Find("Capsule");
-    fpsplayer = GameObject.Find("First Person Controller");
-    paddleB = GameObject.Find("paddle");
-    paddleI = GameObject.Find("invaderpaddle");
-    paddlef = GameObject.Find("FroggerPlayer");
+        
     //froggerplay.SetActive(false);
-    movement.iffrog = false;
-    paddleB.SetActive(false);
-    paddleI.SetActive(false);
-    paddlef.SetActive(false);
+        movement.iffrog = false;
+        paddleB.SetActive(false);
+        paddleI.SetActive(false);
+        paddlef.SetActive(false);
+        breakout.SetActive(false);
        
     
     //insidebox = true;
@@ -79,6 +88,7 @@ public class interaction : MonoBehaviour
             //froggerplay.SetActive(true);
             fpsplayer.SetActive(false);
             paddleB.SetActive(true);
+            breakout.SetActive(true);
 
 
             

@@ -7,21 +7,21 @@
             "actions": [
                 {
                     "name": "movement",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "e4f133ac-a422-4867-adfc-1980aa57df4a",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "aim",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "041a92a8-967b-488c-b912-6957960ad32e",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -39,7 +39,7 @@
                 {
                     "name": "up",
                     "id": "f13511f3-02d5-42b8-9c3c-5c52cf5c88a1",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "keyboard",
@@ -50,28 +50,6 @@
                 {
                     "name": "down",
                     "id": "bcb5dc7a-f7f3-4864-8441-552439b848d1",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "keyboard",
-                    "action": "movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "22c0ba60-67fa-4f49-acb5-ebd2ef003a6e",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "keyboard",
-                    "action": "movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "357ecc28-e9f2-435a-a7f1-9124cdd0f061",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",

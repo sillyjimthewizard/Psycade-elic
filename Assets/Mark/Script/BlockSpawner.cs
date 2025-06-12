@@ -16,6 +16,7 @@ public class BlockSpawner : MonoBehaviour
     Vector3 spawnPos;
     Transform holder;
     
+    
     public int BlockAmount;
     // Start is called before the first frame update
     void Start()
