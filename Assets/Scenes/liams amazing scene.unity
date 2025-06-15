@@ -520,7 +520,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 135708425}
 --- !u!33 &84571166
@@ -2391,7 +2391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &393264182
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2697,7 +2697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &434949744
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5868,7 +5868,7 @@ Transform:
   m_GameObject: {fileID: 968190974}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -42.25, y: -1.7761459, z: 1084.66}
+  m_LocalPosition: {x: -38.28, y: -1.7761459, z: 1084.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5892,8 +5892,8 @@ MonoBehaviour:
   rotatedelta: 0
   magnitude: 5
   enemycollission: {fileID: 0}
-  hitparticle: {fileID: 434949743}
-  blockparticle: {fileID: 393264181}
+  hitparticle: {fileID: 0}
+  blockparticle: {fileID: 0}
   theseColors: []
   helpTextobj: {fileID: 1996153500}
 --- !u!1 &974947813 stripped
@@ -6067,7 +6067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
   enemy2: {fileID: 0}
-  centre: {x: 49.7, y: 12.7, z: -1162.3}
+  centre: {x: 49.7, y: 13, z: -1162.3}
   size: {x: 6.6, y: 0.66, z: 6.77}
   block: {fileID: 0}
   noOfBlocks: 6

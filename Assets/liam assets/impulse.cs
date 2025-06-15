@@ -31,9 +31,9 @@ public class impulse : MonoBehaviour
     
       
        
-      helpTextobj = GameObject.Find("PressSpace");
-      helpTextobj.GetComponent<TMP_Text>().enabled = true;
-      helpTextobj.transform.DOScale(1.2f, 0.5f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
+      //helpTextobj = GameObject.Find("PressSpace");
+      //helpTextobj.GetComponent<TMP_Text>().enabled = true;
+      //helpTextobj.transform.DOScale(1.2f, 0.5f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
       
     }
     
@@ -45,7 +45,7 @@ public class impulse : MonoBehaviour
           rig=GetComponent<Rigidbody>();
           rig.AddForce(Vector3.forward*magnitude,ForceMode.Impulse);
           started = true;
-          helpTextobj.GetComponent<TMP_Text>().enabled = false;
+          //helpTextobj.GetComponent<TMP_Text>().enabled = false;
         }
     }
 
@@ -67,7 +67,7 @@ public class impulse : MonoBehaviour
      
 
 
-      public void OnTriggerEnter(Collider other)
+      public void OnColisionEnter(Collider other)
     {
       /*  if (other.gameObject.CompareTag ("Hoop"))
         {
@@ -75,7 +75,7 @@ public class impulse : MonoBehaviour
           Destroy(other.transform.parent.gameObject);
           Debug.Log("HELP ME");
         }
-   }
+   }s
 
     public void OnCollisionEnter(Collision other)
         {
@@ -106,24 +106,26 @@ public class impulse : MonoBehaviour
         */
         if (other.gameObject.CompareTag ("block"))
         {
+          Destroy (other.gameObject,0.1f);
+          Debug.Log("plumb");
           //rig.AddForce(Vector3.forward*magnitude,ForceMode.Impulse); //this make the ball move faster every hit
           
-          Transform tempPosition;
-          tempPosition = other.transform;
+          //Transform tempPosition;
+          //tempPosition = other.transform;
           
-          GameObject particleClone = Instantiate (blockparticle, tempPosition);
-          particleClone.transform.parent = null;
-          Gradient grad = new Gradient();
-          grad.SetKeys( new GradientColorKey[] { new GradientColorKey(theseColors[Random.Range(0,theseColors.Length)], 0f), new GradientColorKey(theseColors[Random.Range(0,theseColors.Length)], 1.0f) }, new GradientAlphaKey[] { new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0.2f, 1.0f) } );
-          ParticleSystem ps = particleClone.GetComponent<ParticleSystem>();
-          var col = ps.colorOverLifetime;
-          col.color = grad;
+          //GameObject particleClone = Instantiate (blockparticle, tempPosition);
+          //particleClone.transform.parent = null;
+          //Gradient grad = new Gradient();
+          //grad.SetKeys( new GradientColorKey[] { new GradientColorKey(theseColors[Random.Range(0,theseColors.Length)], 0f), new GradientColorKey(theseColors[Random.Range(0,theseColors.Length)], 1.0f) }, new GradientAlphaKey[] { new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0.2f, 1.0f) } );
+          //ParticleSystem ps = particleClone.GetComponent<ParticleSystem>();
+          //var col = ps.colorOverLifetime;
+          //col.color = grad;
 
           
             
           
           
-          Destroy (other.gameObject);
+          
           
           
           
