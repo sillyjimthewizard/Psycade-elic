@@ -67,19 +67,20 @@ public class impulse : MonoBehaviour
      
 
 
-      public void OnColisionEnter(Collider other)
-    {
+     // public void OnColisionEnter(Collider other)
+    //{
       /*  if (other.gameObject.CompareTag ("Hoop"))
         {
           Destroy (other.gameObject);
           Destroy(other.transform.parent.gameObject);
           Debug.Log("HELP ME");
         }
+        
    }s
-
+*/
     public void OnCollisionEnter(Collision other)
         {
-        if (other.gameObject.CompareTag ("enemy"))
+        /*if (other.gameObject.CompareTag ("enemy"))
         {
           //rig.AddForce(Vector3.forward*magnitude,ForceMode.Impulse); //this make the ball move faster every hit
           
