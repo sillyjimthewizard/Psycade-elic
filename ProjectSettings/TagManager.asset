@@ -11,6 +11,7 @@ TagManager:
   - breakout
   - bricks
   - block
+  - Child maker
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Childmaker
   - 
   - 
   - 

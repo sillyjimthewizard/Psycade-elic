@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3548820433132896995}
   - component: {fileID: 8935336887130219349}
   - component: {fileID: 6418064902262762931}
+  - component: {fileID: 6618345352962330145}
   m_Layer: 0
   m_Name: Rainbow
   m_TagString: Child maker
@@ -149,6 +150,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.535697, y: 1.33, z: 0.6191645}
   m_Center: {x: -0.19106545, y: 0.45999998, z: 0.07408189}
+--- !u!114 &6618345352962330145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574988967911087965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ee7d8e27826c45bc99d512710d800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2470511863580893354
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -8412,17 +8412,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FroggerPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 1773623360729482, guid: 2e066db77372e564092a2cbdbe3b8ecb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773623360729482, guid: 2e066db77372e564092a2cbdbe3b8ecb, type: 3}
+      propertyPath: m_TagString
+      value: Child maker
+      objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 2e066db77372e564092a2cbdbe3b8ecb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0673094
       objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 2e066db77372e564092a2cbdbe3b8ecb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5000005
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 2e066db77372e564092a2cbdbe3b8ecb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -145.5998
+      value: -145.61
       objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 2e066db77372e564092a2cbdbe3b8ecb, type: 3}
       propertyPath: m_LocalRotation.w
