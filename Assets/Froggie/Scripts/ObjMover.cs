@@ -14,7 +14,6 @@ public class ObjMover : MonoBehaviour
     
     private void Start() {
         rb = GetComponent<Rigidbody>(); // grab the rigidbody
-        frogguy = GameObject.Find("FroggerPlayer");
         //endpoint = GameObject.Find("pointB");
     }
     // Update is called once per frame
@@ -26,7 +25,6 @@ public class ObjMover : MonoBehaviour
               
         if (distance < 0.5f) // destroy if distance is small
         {
-            frogguy.transform.SetParent(null);
             Destroy(this.gameObject);
         }
         
