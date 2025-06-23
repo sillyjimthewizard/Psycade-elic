@@ -48,7 +48,7 @@ public class interaction1 : MonoBehaviour
     
         void OnTriggerEnter(Collider other) 
     {
-        if (other.CompareTag("end") && insidebox2 == true)
+        if (other.CompareTag("end"))
         {
             Debug.Log("HELP ME");
             insidebox2 = false;
@@ -60,8 +60,19 @@ public class interaction1 : MonoBehaviour
             Debug.Log(Manager.tokencount);
             froggerplay.SetActive(false);
         }
+
+        if (other.CompareTag("end 2"))
+        {
+            Debug.Log("HELP ME");
+            
+            //froggerplay.SetActive(false);
+            
+            transform.position = setPosition;
+        }
+        
+    }
         
     }
 
     
-}
+

@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f0e465a932ee54681de78e6c4a89ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   endPoint: {fileID: 0}
 --- !u!54 &8935336887130219349
 Rigidbody:
@@ -136,7 +136,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4574988967911087965}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: bac2777e5b9153c41b0c838f932c6a02, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

@@ -12,6 +12,8 @@ TagManager:
   - bricks
   - block
   - Child maker
+  - end 2
+  - CrowdSpawn
   layers:
   - Default
   - TransparentFX

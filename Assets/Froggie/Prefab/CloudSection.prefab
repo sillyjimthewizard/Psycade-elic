@@ -48,8 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 6149494659024598771}
   pointB: {fileID: 3134246683317422706}
-  minCloudTime: 1
-  maxCloudTime: 3
+  minCloudTime: 3
+  maxCloudTime: 6
   reverseDirection: 0
   spawnObj: {fileID: 4574988967911087965, guid: 34ec3bcffe5f5df4c80c43ecad8adc18,
     type: 3}
