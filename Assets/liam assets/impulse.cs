@@ -109,6 +109,7 @@ public class impulse : MonoBehaviour
         {
           Destroy (other.gameObject,0.1f);
           Debug.Log("plumb");
+          rig.velocity = rig.velocity;
           //rig.AddForce(Vector3.forward*magnitude,ForceMode.Impulse); //this make the ball move faster every hit
           
           //Transform tempPosition;

@@ -24,7 +24,7 @@ public class AudienceManager : MonoBehaviour
         {
             float coinFlip = Random.Range (0.0f, 1.0f);
             
-            if (coinFlip >= 0.3f)
+            if (coinFlip >= 0f)
             {
 
                 audienceMember = theseModels2[Random.Range(0,theseModels2.Length)];
