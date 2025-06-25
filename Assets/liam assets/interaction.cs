@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,43 +21,55 @@ public class interaction : MonoBehaviour
      public GameObject paddlef;
      public GameObject paddleB;
      public GameObject paddleI;
+    public GameObject froggergame;
+
+    public bool froggerspawned;
 
      public GameObject breakout;
 
     public bool insidebox;
-    movement movement;
+    FirstPersonMovement movement;
     
     interaction1 interaction1;
     movement3 movement3;
     movement2 movement2;
-    
-    
+
+
     // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
         fpsplayer = GameObject.Find("First Person Controller");
+    }
+    void Start()
+    {
+
+        
         paddleB = GameObject.Find("paddle");
         paddleI = GameObject.Find("invaderpaddle");
-        paddlef = GameObject.Find("FroggerPlayer");
+        
         breakout = GameObject.Find ("breakout");
+        froggergame = GameObject.Find("frogger (1)");
+        froggerspawned = true; 
         
 
 
 
-        movement = froggerplay.GetComponent<movement>();
+        movement = froggerplay.GetComponent<FirstPersonMovement>();
         interaction1 = froggerplay.GetComponent<interaction1>();
         movement2 = paddleB.GetComponent<movement2>();
         movement3 = paddleI.GetComponent<movement3>();
         playerControls = new Controls();
         playerInput = GetComponent<PlayerInput>();
+        
 
     //froggerplay = GameObject.Find("Capsule");
         
     //froggerplay.SetActive(false);
-        movement.iffrog = false;
+        //movement.iffrog = false;
         paddleB.SetActive(false);
         paddleI.SetActive(false);
-        paddlef.SetActive(false);
+        //paddlef.SetActive(false);
         breakout.SetActive(false);
        
     
@@ -69,14 +82,24 @@ public class interaction : MonoBehaviour
     {
         if (other.CompareTag("machine") && Input.GetKey(playgame))
         {
+
+            //froggergame.SetActive(true);
+            froggerspawned = true;
+            fpsplayer.SetActive(false);
+            Debug.Log("HELPMEPLEASEWEEEEE3JHFGXDJI BFJK JFSB HKFJJ");
+            
+            
+        
+            //interaction1.insidebox2 = true;
+            
+            
             Debug.Log("HELP ME");
             //insidebox = false;
 
             //froggerplay.SetActive(true);
-            paddlef.SetActive(true);
-            fpsplayer.SetActive(false);
-            interaction1.insidebox2 = true;
-            
+            //paddlef = GameObject.Find("FroggerPlayer");
+            //paddlef.SetActive(true);#
+        
             
         }
 
@@ -109,6 +132,10 @@ public class interaction : MonoBehaviour
             
         }
         
+    }
+    public void setActivefps()
+    {
+        fpsplayer.SetActive(false);
     }
     
 

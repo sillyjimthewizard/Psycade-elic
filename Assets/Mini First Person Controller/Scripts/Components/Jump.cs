@@ -53,7 +53,7 @@ public class Jump : MonoBehaviour
         // IF TRUE add force in the same direction of the platform
     }
 
-    void OnCollisionEnter(Collision other)
+    /*void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Child maker"))
         {
@@ -65,25 +65,26 @@ public class Jump : MonoBehaviour
 
         }
     }
-    void OnCollisionExit(Collision other)
-    {
+    //void OnCollisionExit(Collision other)
+    //{
         //gameObject.transform.SetParent(other.transform, false);
 
-        transform.parent = null;
-        bool Platmove=false;
+        //transform.parent = null;
+        //bool Platmove=false;
         // set bool to false once exit
 
-    }
-    void Start()
-    {
-        bool Platmove=false;
-    }
+    //}
+    //void Start()
+    //{
+        //bool Platmove=false;
+   // }
     //Found this on googel hope it would
     // Example 2: Parent with worldPositionStays = false (default)
     // childObject.transform.SetParent(parentObject.transform, false);
 
     // Example 3: Parent with worldPositionStays = true
     //childObject.transform.SetParent(parentObject.transform, true);
+    */
 }
 
 

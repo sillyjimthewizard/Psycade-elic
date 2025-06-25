@@ -19,24 +19,30 @@ public class interaction1 : MonoBehaviour
      public GameObject gamemanager;
 
     public bool insidebox2;
-    movement movement;
+    FirstPersonMovement movement;
+    interaction loopyshit;
     public Vector3 setPosition;
 
     manager Manager;
-    
-    
+
+
     // Start is called before the first frame update
+
     void Start()
     {
-    //movement = froggerplay.GetComponent<movement>();
+        
+    }
+    void Awake()
+    {
+    movement = froggerplay.GetComponent<FirstPersonMovement>();
     Manager = gamemanager.GetComponent<manager>();
-    //movement.iffrog = false;
+    
         //playerControls = new Controls();
     //playerInput = GetComponent<PlayerInput>();
 
-    froggerplay = GameObject.Find("FroggerPlayer");
-    fpsplayer = GameObject.Find("First Person Controller");
-    gamemanager = GameObject.Find("Manager");
+        froggerplay = GameObject.Find("FroggerPlayer");
+        fpsplayer = GameObject.Find("First Person Controller");
+        gamemanager = GameObject.Find("Manager");
     
     
     
@@ -44,21 +50,31 @@ public class interaction1 : MonoBehaviour
     insidebox2 = true;
     }
 
+    public void FixedUpdate()
+    {
+        if (Input.GetKey(playgame) && (loopyshit.froggerspawned = true))
+        {
+            movement.canmove = true;
+        }
+    }
+
     // Update is called once per frame
-    
-        void OnTriggerEnter(Collider other) 
+
+    void OnTriggerEnter(Collider other) 
     {
         if (other.CompareTag("end"))
         {
             Debug.Log("HELP ME");
             insidebox2 = false;
             fpsplayer.SetActive(true);
-            //froggerplay.SetActive(false);
             
             transform.position = setPosition;
             Manager.tokencount ++;
             Debug.Log(Manager.tokencount);
-            froggerplay.SetActive(false);
+            //froggerplay.SetActive(false);
+            movement.canmove = false;
+
+            
         }
 
         if (other.CompareTag("end 2"))

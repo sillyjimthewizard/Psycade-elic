@@ -30,7 +30,7 @@ public class BlockSpawner : MonoBehaviour
             block = theseModels[Random.Range(0,theseModels.Length)];
             //blockObj.transform.GetComponent<Renderer>().material.color = theseColors[Random.Range(0,theseColors.Length)];
 
-            GameObject enemy2Obj = Instantiate(block, spawnPos, Quaternion.identity);
+            GameObject enemy2Obj = Instantiate(block, spawnPos, transform.rotation);
             enemy2Obj.transform.parent = holder;
         
             GameObject enemyObj = Instantiate(block);
