@@ -30,7 +30,7 @@ public class interaction : MonoBehaviour
     public bool insidebox;
     FirstPersonMovement movement;
     
-    interaction1 interaction1;
+    public interaction1 interaction1;
     movement3 movement3;
     movement2 movement2;
 
@@ -86,14 +86,13 @@ public class interaction : MonoBehaviour
             //froggergame.SetActive(true);
             froggerspawned = true;
             fpsplayer.SetActive(false);
-            Debug.Log("HELPMEPLEASEWEEEEE3JHFGXDJI BFJK JFSB HKFJJ");
             
             
         
             //interaction1.insidebox2 = true;
             
             
-            Debug.Log("HELP ME");
+            
             //insidebox = false;
 
             //froggerplay.SetActive(true);

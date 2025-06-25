@@ -38,7 +38,6 @@ public class UIscript : MonoBehaviour
             main.enabled = true;
             options.enabled = false;
             canplay = false;
-            Debug.Log("this is working owo");
 
         }
         

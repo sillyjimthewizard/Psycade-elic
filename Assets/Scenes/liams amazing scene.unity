@@ -4079,6 +4079,11 @@ PrefabInstance:
       objectReference: {fileID: 807374131}
     - target: {fileID: 2224015292365307802, guid: c1d8756ff0c42144e86628698cab3290,
         type: 3}
+      propertyPath: loopyshit
+      value: 
+      objectReference: {fileID: 807374138}
+    - target: {fileID: 2224015292365307802, guid: c1d8756ff0c42144e86628698cab3290,
+        type: 3}
       propertyPath: froggerplay
       value: 
       objectReference: {fileID: 1501575320}
@@ -4170,7 +4175,7 @@ PrefabInstance:
     - target: {fileID: 5610534041486543099, guid: c1d8756ff0c42144e86628698cab3290,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1798
+      value: 1801
       objectReference: {fileID: 0}
     - target: {fileID: 6521480920904557276, guid: c1d8756ff0c42144e86628698cab3290,
         type: 3}
@@ -4190,7 +4195,7 @@ PrefabInstance:
     - target: {fileID: 7820996881488266759, guid: c1d8756ff0c42144e86628698cab3290,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1798
+      value: 1801
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5133,6 +5138,7 @@ MonoBehaviour:
   froggerspawned: 0
   breakout: {fileID: 844168497}
   insidebox: 0
+  interaction1: {fileID: 1501575322}
 --- !u!1 &810833698
 GameObject:
   m_ObjectHideFlags: 0
@@ -5361,6 +5367,7 @@ MonoBehaviour:
   froggerplay: {fileID: 0}
   gamemanager: {fileID: 2139934222}
   insidebox2: 0
+  loopyshit: {fileID: 0}
   setPosition: {x: 0, y: 2, z: 0}
 --- !u!1 &810854551
 GameObject:
@@ -7658,6 +7665,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 684634033}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1501575322 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2224015292365307802, guid: c1d8756ff0c42144e86628698cab3290,
+    type: 3}
+  m_PrefabInstance: {fileID: 684634033}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501575320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c96cf01ab5b3a4eb99c7322f3129e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1511536678
 GameObject:
   m_ObjectHideFlags: 0

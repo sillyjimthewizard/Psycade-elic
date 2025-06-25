@@ -20,7 +20,7 @@ public class interaction1 : MonoBehaviour
 
     public bool insidebox2;
     FirstPersonMovement movement;
-    interaction loopyshit;
+    public interaction loopyshit;
     public Vector3 setPosition;
 
     manager Manager;
@@ -45,15 +45,14 @@ public class interaction1 : MonoBehaviour
         gamemanager = GameObject.Find("Manager");
     
     
-    
-    
     insidebox2 = true;
     }
 
     public void FixedUpdate()
     {
-        if (Input.GetKey(playgame) && (loopyshit.froggerspawned = true))
+        if (Input.GetKey(playgame) && loopyshit.froggerspawned == true )
         {
+            Debug.Log("Fired");
             movement.canmove = true;
         }
     }
