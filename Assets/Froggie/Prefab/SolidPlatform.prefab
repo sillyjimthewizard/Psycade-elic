@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5726916116645850071}
   - component: {fileID: 7863737413147312165}
   - component: {fileID: 8269583858131601192}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SolidPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,6 +183,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plane hull final 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551728850625956197, guid: d405fb322e2bc26488f4e03f07ea411e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

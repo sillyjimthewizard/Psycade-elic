@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1531594823537519709}
   - component: {fileID: 654116863979502469}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CloudSection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3134246683317422706}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PointB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6149494659024598771}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PointA
   m_TagString: Untagged
   m_Icon: {fileID: 0}

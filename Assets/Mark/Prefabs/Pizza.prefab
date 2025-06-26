@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8762257023115053700}
   - component: {fileID: 9195949129401918391}
   - component: {fileID: 8749591694666242826}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1169942305766681520}
   - component: {fileID: 2418795728278659332}
   - component: {fileID: 4306864567071773538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 8805622878324806096}
   - component: {fileID: 7883105287429337409}
   - component: {fileID: 8374251194272025232}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 8869407442213621739}
   - component: {fileID: 8696349261333155432}
   - component: {fileID: 4366258650422785908}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 2535082235193112312}
   - component: {fileID: 4941151970902361444}
   - component: {fileID: 1656100806210249657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5824316625061105170}
-  m_Layer: 0
+  - component: {fileID: -1590956499931555759}
+  - component: {fileID: 2803215889274875213}
+  m_Layer: 8
   m_Name: Pizza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,3 +453,38 @@ Transform:
   - {fileID: 2535082235193112312}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &-1590956499931555759
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567730951726601980}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &2803215889274875213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567730951726601980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1235be18fde1a64980610bcf4a9282e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveRadius: 5

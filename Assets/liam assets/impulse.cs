@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
+using UnityEditor.Rendering;
 
 public class impulse : MonoBehaviour
 {
@@ -22,8 +23,9 @@ public class impulse : MonoBehaviour
     public GameObject blockparticle;
     
     public Color[] theseColors;
-    bool started;
+    public bool started;
     public GameObject helpTextobj;
+    public Rigidbody yes;
     
     // Start is called before the first frame update
     void Start()
@@ -61,6 +63,13 @@ public class impulse : MonoBehaviour
         {
             transform.Rotate(0, 0, degreesPerSecond * Time.deltaTime);
         }
+
+       if (started == false)
+       {
+            this.gameObject.GetComponent<Rigidbody>().velocity = new Vector3 (0,0,0);
+ 
+
+       }
 
     }
 

@@ -23,6 +23,8 @@ public class interaction : MonoBehaviour
      public GameObject paddleI;
     public GameObject froggergame;
 
+    public GameObject spawner;
+
     public bool froggerspawned;
 
      public GameObject breakout;
@@ -33,6 +35,14 @@ public class interaction : MonoBehaviour
     public interaction1 interaction1;
     movement3 movement3;
     movement2 movement2;
+
+    public AudienceManager spawning; 
+
+    public GameObject froggercam;
+    public GameObject ball;
+    public impulse ballshoot;
+
+    public Rigidbody theball;
 
 
     // Start is called before the first frame update
@@ -85,6 +95,7 @@ public class interaction : MonoBehaviour
 
             //froggergame.SetActive(true);
             froggerspawned = true;
+            froggercam.SetActive(true);
             fpsplayer.SetActive(false);
             
             
@@ -108,9 +119,18 @@ public class interaction : MonoBehaviour
             //insidebox = false;
             
             //froggerplay.SetActive(true);
-            fpsplayer.SetActive(false);
+            spawning.Breakoutstart();
+            ballshoot.started = false;
+            
+            ball.transform.localPosition = new Vector3(-38.28f,-1.776146f,1084.66f);
             paddleB.SetActive(true);
             breakout.SetActive(true);
+            froggercam.SetActive(false);
+            fpsplayer.SetActive(false);
+
+            
+
+
 
 
             
@@ -132,11 +152,7 @@ public class interaction : MonoBehaviour
         }
         
     }
-    public void setActivefps()
-    {
-        fpsplayer.SetActive(false);
-    }
-    
+  
 
      //&& insidebox == true
 }

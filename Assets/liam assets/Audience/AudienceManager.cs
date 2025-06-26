@@ -14,7 +14,7 @@ public class AudienceManager : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    public void Breakoutstart()
     {
         holder = GameObject.Find("CrowdPoints").transform;
         audienceSpawns = GameObject.FindGameObjectsWithTag("CrowdSpawn");
