@@ -93,6 +93,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 578716e41166111419e03dd55fa8c790,
+        type: 3}
+      propertyPath: m_TagString
+      value: EVILFOOD
+      objectReference: {fileID: 0}
     - target: {fileID: 8416272007918961125, guid: 578716e41166111419e03dd55fa8c790,
         type: 3}
       propertyPath: m_Layer
@@ -110,6 +115,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -6106555287065980288}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 578716e41166111419e03dd55fa8c790,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7588838668963386986}
   m_SourcePrefab: {fileID: 100100000, guid: 578716e41166111419e03dd55fa8c790, type: 3}
 --- !u!1 &3345053367121540324 stripped
 GameObject:
@@ -152,3 +161,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveRadius: 2
+  currentDestination: {x: 0, y: 0, z: 0}
+--- !u!65 &-7588838668963386986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3345053367121540324}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

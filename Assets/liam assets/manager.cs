@@ -12,6 +12,7 @@ public class manager : MonoBehaviour
       movement2 movementfps;
     interaction1 interaction1;
      public KeyCode resetgame = KeyCode.R;
+    public GameObject invaderz;
 
 
      
@@ -26,6 +27,7 @@ public class manager : MonoBehaviour
         interaction1 = froggerplay.GetComponent<interaction1>();
         movementfps = fpsplayer.GetComponent<movement2>();
         fpsplayer.SetActive(false);
+        invaderz = GameObject.Find("invaderpaddle");
     }
 
     // Update is called once per frame
@@ -35,6 +37,8 @@ public class manager : MonoBehaviour
         {
             fpsplayer.SetActive(true);
             froggerplay.SetActive(false);
+            invaderz.SetActive(false);
+            
             
 
         }

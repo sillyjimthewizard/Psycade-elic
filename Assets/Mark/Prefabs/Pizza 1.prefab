@@ -426,10 +426,9 @@ GameObject:
   - component: {fileID: 5824316625061105170}
   - component: {fileID: -1590956499931555759}
   - component: {fileID: 2803215889274875213}
-  - component: {fileID: 5471389795584155090}
   m_Layer: 8
-  m_Name: Pizza
-  m_TagString: EVILFOOD
+  m_Name: Pizza 1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -489,25 +488,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveRadius: 5
-  currentDestination: {x: 0, y: 0, z: 0}
---- !u!65 &5471389795584155090
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8567730951726601980}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.5210643, y: 1.903381, z: 3.0956478}
-  m_Center: {x: -1.5604413, y: 0.4516906, z: -0.05785489}

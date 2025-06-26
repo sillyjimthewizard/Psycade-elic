@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 78464069735956780}
   - component: {fileID: 7977547618610095086}
   - component: {fileID: 4923652701914393355}
+  - component: {fileID: -19384993063002770}
   m_Layer: 8
   m_Name: Burger
-  m_TagString: Untagged
+  m_TagString: EVILFOOD
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,9 +102,9 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -144,3 +145,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveRadius: 5
   currentDestination: {x: 0, y: 0, z: 0}
+--- !u!65 &-19384993063002770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5022442711652796812}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.021623053, y: 0.021788897, z: 0.018835802}
+  m_Center: {x: 0.0003539794, y: -0.0000634538, z: 0.014239244}

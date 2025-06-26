@@ -14,6 +14,8 @@ public class interaction : MonoBehaviour
      
      private Vector2 interact;
      public KeyCode playgame = KeyCode.E;
+
+    public GameObject manager;
     
      
      public GameObject fpsplayer;
@@ -35,6 +37,8 @@ public class interaction : MonoBehaviour
     public interaction1 interaction1;
     movement3 movement3;
     movement2 movement2;
+
+    public AudioSource sound;
 
     public AudienceManager spawning; 
 
@@ -62,6 +66,7 @@ public class interaction : MonoBehaviour
         froggergame = GameObject.Find("frogger (1)");
         froggerspawned = true; 
         
+        
 
 
 
@@ -71,7 +76,7 @@ public class interaction : MonoBehaviour
         movement3 = paddleI.GetComponent<movement3>();
         playerControls = new Controls();
         playerInput = GetComponent<PlayerInput>();
-        
+        sound = manager.GetComponent<AudioSource>();
 
     //froggerplay = GameObject.Find("Capsule");
         
@@ -96,6 +101,7 @@ public class interaction : MonoBehaviour
             //froggergame.SetActive(true);
             froggerspawned = true;
             froggercam.SetActive(true);
+            sound.Play();
             fpsplayer.SetActive(false);
             
             
@@ -127,6 +133,7 @@ public class interaction : MonoBehaviour
             breakout.SetActive(true);
             froggercam.SetActive(false);
             fpsplayer.SetActive(false);
+            sound.Play();
 
             
 
@@ -145,7 +152,8 @@ public class interaction : MonoBehaviour
             //froggerplay.SetActive(true);
             fpsplayer.SetActive(false);
             paddleI.SetActive(true);
-
+            froggercam.SetActive(false);
+            sound.Play();
 
             
             
